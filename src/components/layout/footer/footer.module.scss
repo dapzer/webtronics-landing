@@ -1,0 +1,45 @@
+@import "src/styles/variables";
+
+.wrapper {
+  background: $c-clean-5;
+  padding: 35px 0;
+
+  backdrop-filter: blur(5px);
+  border-top: 1px solid;
+  border-image: $c-gradient 1;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  .block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .title {
+      font-weight: $fw-bold;
+      font-size: 18px;
+      font-family: Roboto, sans-serif;
+    }
+  }
+
+  .companyLinks {
+    width: 100%;
+    max-width: 300px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 18px;
+  }
+
+  .socials {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+ }
+}
