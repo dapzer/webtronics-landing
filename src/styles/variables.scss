@@ -1,0 +1,35 @@
+// Colors
+
+$c-gradient: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%);
+$c-linear-2: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+$c-linear-3: linear-gradient(90deg, rgba(21, 191, 253, 0) 8.03%, rgba(21, 191, 253, 0.7) 69.15%, rgba(156, 55, 253, 0.7) 97.95%);;
+$c-clean: #fff;
+$c-clean-5: rgba(255, 255, 255, 0.05);
+$c-primary-80: #3B48D0;
+$c-primary-100: #0A1482;
+$c-error: #FD4646;
+$c-error-bg: rgba(255, 165, 165, 0.2);;
+$c-border: #636363;
+$c-text-40: #A2CBFB;
+$c-bg: #0C102D;
+
+// Typography
+
+$fs-h1: 150px;
+$fs-h2: 72px;
+$fs-h3: 32px;
+$fs-h4: 24px;
+$fs-p-1: 16px;
+$fs-p-2: 14px;
+$fs-btn: 20px;
+$fs-input: 16px;
+
+$fw-bold: 600;
+$fw-regular: 500;
+$fw-light: 400;
+
+// Sizes
+
+$s-container-indent: 24px;
+$s-container: 1225px + ($s-container-indent * 2);
+$s-bradius-1: 8px;
