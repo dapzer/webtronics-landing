@@ -1,0 +1,23 @@
+.body {
+  padding-top: 125px;
+  max-width: 1175px;
+
+  .block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    &:nth-child(2) {
+      justify-content: normal;
+      column-gap: 24px;
+    }
+
+    &:nth-child(3) {
+      justify-content: flex-end;
+    }
+  }
+
+
+}
