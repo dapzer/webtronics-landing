@@ -1,0 +1,16 @@
+@import "src/styles/variables";
+
+.body {
+  background-image: url("../../../../public/technologies/cardBg.svg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  width: 181px;
+  height: 230px;
+  padding: 24px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}

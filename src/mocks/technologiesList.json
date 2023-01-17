@@ -1,0 +1,20 @@
+{
+  "technologies": [
+    {
+      "title": "Angular",
+      "image": "/technologies/angular.svg"
+    },
+    {
+      "title": "React",
+      "image": "/technologies/react.svg"
+    },
+    {
+      "title": "Vue.js",
+      "image": "/technologies/vue.svg"
+    },
+    {
+      "title": "JavaScript",
+      "image": "/technologies/js.svg"
+    }
+  ]
+}
