@@ -24,6 +24,17 @@ body {
   background: $c-bg;
   background-size: cover;
   color: $c-clean;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
 
   &:before, &:after {
     content: "";
@@ -48,20 +59,7 @@ body {
   &:after {
     max-width: 2325px;
     background-image: url("../../public/backgrounds/effects.png");
-    background-position: -80px top;
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-
-  header {
+    background-position: -115px 110px;
   }
 }
 
