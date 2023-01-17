@@ -1,0 +1,26 @@
+.body {
+  padding-top: 190px;
+  position: relative;
+
+  .title {
+    text-align: center;
+    padding-bottom: 56px;
+  }
+
+  .block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .info {
+    padding-top: 100px;
+  }
+
+  .bgProfession {
+    position: absolute;
+    bottom: 0;
+    right: -20%;
+    z-index: -1;
+  }
+}

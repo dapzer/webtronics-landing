@@ -1,0 +1,19 @@
+{
+  "mentors": [
+    {
+      "name": "Wade Warren",
+      "description": "Front-end engineers work closely with designers",
+      "image": "/mentors/Wade Warren.jpg"
+    },
+    {
+      "name": "Kristin Watson",
+      "description": "Front-end engineers work closely with designers",
+      "image": "/mentors/Kristin Watson.jpg"
+    },
+    {
+      "name": "Robert Fox",
+      "description": "Front-end engineers work closely with designers",
+      "image": "/mentors/Robert Fox.jpg"
+    }
+  ]
+}
