@@ -1,0 +1,9 @@
+@import "variables";
+
+@mixin gradient-bg ($borderSize) {
+  border: $borderSize solid transparent;
+
+  background: linear-gradient($c-clean-5, $c-clean-5) padding-box,
+  linear-gradient($c-bg, $c-bg) padding-box,
+  $c-gradient border-box;
+}

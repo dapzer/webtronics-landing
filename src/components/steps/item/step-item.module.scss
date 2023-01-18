@@ -1,0 +1,64 @@
+@import "src/styles/variables";
+
+.body {
+  position: relative;
+  width: 100%;
+  max-width: fit-content;
+  margin-top: 60px;
+  display: flex;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  & > div:first-of-type {
+    margin-left: 0;
+  }
+
+  .overlay {
+    margin-left: -146px;
+    max-width: max-content;
+    user-select: none;
+    pointer-events: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .line {
+      padding-left: 28px;
+      position: relative;
+      display: flex;
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: $c-primary-80;
+        border-radius: 50%;
+        right: -29px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.rotated {
+  align-self: flex-end;
+  margin-top: -145px;
+  flex-direction: row-reverse;
+
+  & > div:first-of-type {
+    margin-left: 16px;
+    margin-right: 0;
+  }
+
+  .overlay {
+    margin-left: unset;
+    margin-right: -146px;
+    transform: rotateY(180deg);
+  }
+}

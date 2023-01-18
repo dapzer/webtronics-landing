@@ -1,0 +1,29 @@
+@import "src/styles/variables";
+
+.body {
+  padding-top: 185px;
+
+  .title {
+    padding-bottom: 75px;
+    text-align: center;
+  }
+
+  .list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 865px;
+      width: 4px;
+      background: $c-linear-2;
+      top: 105px;
+      left: 0;
+      right: 0;
+      margin: auto  ;
+    }
+  }
+}

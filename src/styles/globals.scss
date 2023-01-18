@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 html,
 body {
@@ -130,10 +131,7 @@ button {
 
 input {
   outline: none;
-  border: 1px solid transparent;
-  background: linear-gradient($c-clean-5, $c-clean-5) padding-box,
-  linear-gradient($c-bg, $c-bg) padding-box,
-  $c-gradient border-box;
+  @include gradient-bg(1px);
   border-radius: $s-bradius-1;
 
   width: 100%;
