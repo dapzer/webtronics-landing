@@ -1,0 +1,36 @@
+@import "src/styles/variables";
+
+$clip-path: polygon(calc(100% - 25px) 100%, 100% calc(100% - 25px), 100% 0, 25px 0, 0 25px, 0 100%);
+
+.wrapper {
+  width: 100%;
+  background: $c-gradient;
+  padding: 2px;
+  clip-path: $clip-path;
+  max-width: 703px;
+}
+
+.body {
+  padding: 24px;
+  background: linear-gradient($c-clean-5, $c-clean-5) padding-box,
+  linear-gradient($c-bg, $c-bg) padding-box,;
+  clip-path: $clip-path;
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::-webkit-details-marker {
+      display:none;
+    }
+  }
+
+  .content {
+    padding-right: 40px;
+    padding-top: 16px;
+  }
+}
+
