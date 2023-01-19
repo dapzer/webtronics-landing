@@ -6,6 +6,7 @@ import Technologies from "@/components/technologies/Technologies";
 import Steps from "@/components/steps/Steps";
 import Questions from "@/components/questions/Questions";
 import Reviews from "@/components/review/Reviews";
+import Gallery from "@/components/gallery/Gallery";
 
 const HomePageContainer= () => {
   return (
@@ -16,6 +17,7 @@ const HomePageContainer= () => {
       <Steps />
       <Questions />
       <Reviews />
+      <Gallery />
     </div>
   );
 };
