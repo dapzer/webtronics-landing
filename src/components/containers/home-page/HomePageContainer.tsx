@@ -5,6 +5,7 @@ import About from "@/components/about/About";
 import Technologies from "@/components/technologies/Technologies";
 import Steps from "@/components/steps/Steps";
 import Questions from "@/components/questions/Questions";
+import Reviews from "@/components/review/Reviews";
 
 const HomePageContainer= () => {
   return (
@@ -14,6 +15,7 @@ const HomePageContainer= () => {
       <Technologies />
       <Steps />
       <Questions />
+      <Reviews />
     </div>
   );
 };

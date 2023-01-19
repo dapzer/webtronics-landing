@@ -1,0 +1,38 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .position {
+    display: flex;
+    gap: 5px;
+
+    span {
+      font-family: "Clash Display", sans-serif;
+      font-size: $fs-h4;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    button {
+      @include gradient-bg(1px);
+      padding: 10px 15px;
+      border-radius: $s-bradius-1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:nth-of-type(1) {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}

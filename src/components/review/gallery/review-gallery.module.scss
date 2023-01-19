@@ -1,0 +1,34 @@
+@import "src/styles/variables";
+
+$clip-path: polygon(calc(100% - 25px) 100%, 100% calc(100% - 25px), 100% 0, 0 0, 0 0, 0 100%);
+
+.body {
+  padding-top: 16px;
+  display: flex;
+  gap: 20px;
+
+  .item {
+    max-width: 184px;
+    clip-path: $clip-path;
+    max-height: 275px;
+    background: $c-gradient;
+    padding: 1px;
+    border-radius: $s-bradius-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:first-of-type {
+      max-width: unset;
+    }
+
+    img {
+      clip-path: $clip-path;
+      width: 100%;
+      border-radius: $s-bradius-1;
+      object-fit: cover;
+      height: 100%;
+      object-position: center;;
+    }
+  }
+}
