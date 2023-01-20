@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <section>
+    <section className={styles.body}>
       <h2 className={styles.title}>Gallery</h2>
       <div className={styles.grid}>
         <div className={styles.column}>

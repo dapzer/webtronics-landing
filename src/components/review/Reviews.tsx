@@ -11,7 +11,7 @@ const Reviews = () => {
   return (
     <>
       {sortedReviews.length > 0 && (
-        <section>
+        <section className={styles.body}>
           <h2 className={styles.title}>Review</h2>
           <div className={styles.block}>
             <div className={styles.info}>
