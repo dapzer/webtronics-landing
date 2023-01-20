@@ -68,6 +68,7 @@ html {
 main {
   padding: 30px 0;
   flex: 1 1 auto;
+  overflow: hidden;
 }
 
 // Scroll
@@ -95,6 +96,7 @@ main {
 .Toastify__toast-theme--dark {
   @include gradient-bg(1px);
 }
+
 .Toastify__close-button {
   width: fit-content;
 }
