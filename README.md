@@ -1,5 +1,3 @@
-#### [Перейти на развернутую версию](https://webtronics.dapzer.ru)
-
 ### Локальное развертывание
 
 1. Склонируйте данный репозиторий `git clone https://github.com/dapzer/wgt-test.git`
