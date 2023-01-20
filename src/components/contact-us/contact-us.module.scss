@@ -1,0 +1,21 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.wrapper {
+  padding: 56px 20px;
+  @include gradient-bg(1px);
+  border-radius: $s-bradius-1;
+  display: flex;
+  justify-content: center;
+
+  .body {
+    h2, p {
+      text-align: center;
+    }
+
+    p {
+      padding-top: 16px;
+      padding-bottom: 24px;
+    }
+  }
+}

@@ -1,4 +1,6 @@
 import "@/styles/globals.scss";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import type { AppProps } from "next/app";
 import Layout from "@/components/layout/Layout";
 import React from "react";
@@ -14,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <Layout>
         <Component {...pageProps} />
+        <ToastContainer theme={'dark'} autoClose={1500} limit={2}  />
       </Layout>
     </>
 

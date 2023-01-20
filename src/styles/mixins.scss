@@ -5,5 +5,5 @@
 
   background: linear-gradient($c-clean-5, $c-clean-5) padding-box,
   linear-gradient($c-bg, $c-bg) padding-box,
-  $c-gradient border-box;
+  $c-gradient border-box !important;
 }

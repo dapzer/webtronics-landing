@@ -90,6 +90,14 @@ main {
   background-color: $c-primary-80;
 }
 
+// Toast
+
+.Toastify__toast-theme--dark {
+  @include gradient-bg(1px);
+}
+.Toastify__close-button {
+  width: fit-content;
+}
 
 // Default styles
 
@@ -148,6 +156,7 @@ input {
     color: $c-clean;
   }
 
+  &.error,
   &:invalid {
     color: $c-clean;
     background: $c-error-bg;
@@ -159,6 +168,9 @@ input {
     border-color: $c-border;
   }
 
+  &::placeholder {
+    color: $c-text-40;
+  }
 }
 
 // Typography
