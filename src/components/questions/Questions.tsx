@@ -13,7 +13,7 @@ const Questions = () => {
           <p>Do you have any kind of questions? <br /> We are here to help.</p>
 
           <div className={styles.image}>
-            <Image src={"/questions/logo.svg"} width={2320} height={2320} objectFit="contain" alt={""} />
+            <Image src={"/questions/logo.svg"} width={2320} height={2320} alt={""} />
           </div>
         </div>
 
