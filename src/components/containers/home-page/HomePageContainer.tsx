@@ -13,13 +13,13 @@ const HomePageContainer= () => {
   return (
     <div className={`container ${styles.wrapper}`}>
       <Hero />
-      <About />
-      <Technologies />
-      <Steps />
-      <Questions />
+      <About id={"about"} />
+      <Technologies id={"programs"} />
+      <Steps id={"steps"} />
+      <Questions id={"questions"} />
       <Reviews />
-      <Gallery />
-      <ContactUs />
+      <Gallery  />
+      <ContactUs id={"contact"} />
     </div>
   );
 };

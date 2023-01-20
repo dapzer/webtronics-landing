@@ -1,11 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./about.module.scss";
 import MentorsList from "@/components/about/mentors/list/MentorsList";
 import Image from "next/image";
 
-const About = () => {
+interface Props {
+  id?: string
+}
+
+const About: FC<Props> = (props) => {
   return (
-    <section className={styles.body}>
+    <section className={styles.body} id={props.id}>
       <h2 className={styles.title}>About Us</h2>
 
       <div className={styles.block}>

@@ -1,17 +1,21 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./reviews.module.scss";
 import reviews from "@/mocks/reviews.json";
 import { useReviews } from "@/hooks/useReviews";
 import ReviewsControls from "@/components/review/controls/ReviewsControls";
 import ReviewsGallery from "@/components/review/gallery/ReviewsGallery";
 
-const Reviews = () => {
+interface Props {
+  id?: string
+}
+
+const Reviews: FC<Props> = (props) => {
   const { sortedReviews, activeReview, nextReview, prevReview } = useReviews(reviews.list);
 
   return (
     <>
       {sortedReviews.length > 0 && (
-        <section className={styles.body}>
+        <section className={styles.body} id={props.id}>
           <h2 className={styles.title}>Review</h2>
           <div className={styles.block}>
             <div className={styles.info}>

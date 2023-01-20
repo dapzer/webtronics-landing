@@ -1,10 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./gallery.module.scss";
 import Image from "next/image";
 
-const Gallery = () => {
+interface Props {
+  id?: string
+}
+
+const Gallery: FC<Props> = (props) => {
   return (
-    <section className={styles.body}>
+    <section className={styles.body} id={props.id}>
       <h2 className={styles.title}>Gallery</h2>
       <div className={styles.grid}>
         <div className={styles.column}>

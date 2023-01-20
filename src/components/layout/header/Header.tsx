@@ -5,23 +5,23 @@ import Image from "next/image";
 
 const links = [
   {
-    href: "",
+    href: "#about",
     title: "About"
   },
   {
-    href: "",
+    href: "#programs",
     title: "Programs"
   },
   {
-    href: "",
+    href: "#steps",
     title: "Steps"
   },
   {
-    href: "",
+    href: "#questions",
     title: "Questions"
   },
   {
-    href: "",
+    href: "#contact",
     title: "Get in touch"
   }
 ];
@@ -35,7 +35,7 @@ const Header = () => {
 
       <div className={styles.links}>
         {links.map((el, index) => (
-          <Link key={index} href={el.href}>
+          <Link key={index} href={el.href} scroll={false}>
             {el.title}
           </Link>
         ))}

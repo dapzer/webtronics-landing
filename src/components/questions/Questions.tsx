@@ -1,12 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import QuestionCard from "@/components/questions/card/QuestionCard";
 import styles from "./questions.module.scss"
 import questions from "@/mocks/questionsList.json"
 import Image from "next/image";
+interface Props {
+  id?: string
+}
 
-const Questions = () => {
+const Questions: FC<Props> = (props) => {
   return (
-    <section className={styles.body}>
+    <section className={styles.body} id={props.id}>
       <h2 className={styles.title}>Frequently Asked <br /> Questions</h2>
       <div className={styles.block}>
         <div className={styles.info}>
